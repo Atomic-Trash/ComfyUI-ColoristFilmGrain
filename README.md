@@ -73,7 +73,7 @@ Fine grain is the hardest thing for a codec to keep. Master to ProRes or a 10-bi
 ## Build guide and story
 
 - `docs/Film_Grain_Engine_Build_Guide.pdf` — a two-track build guide (no-code stock path and the one-node version).
-- A full write-up is coming as a Field Note (link added when it goes live).
+- The story behind it is a Field Note: [Film Grain on jeffreykentpost.com](https://jeffreykentpost.com/notes/film-grain).
 
 ## How it was built
 
