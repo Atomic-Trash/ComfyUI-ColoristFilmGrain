@@ -4,7 +4,7 @@ Colorist film tools for ComfyUI. A 35mm-faithful film grain node for video, plus
 
 ![Colorist Film Grain node](docs/node_grain.png)
 
-![Before and after](docs/before_after.gif)
+![Before and after](docs/before_after.webp)
 
 *Left: clean source. Right: 35mm grain, with halation on the highlight.*
 
