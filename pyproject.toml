@@ -1,0 +1,19 @@
+# ComfyUI registry metadata. Local install does not need this; it is here so the
+# pack is ready to publish to the Comfy Registry later.
+# Before publishing: set PublisherId to your registry handle and fix the Repository URL.
+
+[project]
+name = "colorist-film-grain"
+description = "Colorist film tools for ComfyUI: 35mm-faithful film grain (per-channel, band-pass, midtone-weighted, added not overlaid, fresh or coherent) plus a companion warm-highlight halation node."
+version = "1.3.1"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Atomic-Trash/ComfyUI-ColoristFilmGrain"
+
+[tool.comfy]
+# PublisherId must match your handle at registry.comfy.org (create it before publishing).
+PublisherId = "atomic-trash"
+DisplayName = "Colorist Film Grain"
+Icon = ""
