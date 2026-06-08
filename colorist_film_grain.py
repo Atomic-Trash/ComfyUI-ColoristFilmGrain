@@ -1,12 +1,12 @@
 """Colorist Film Grain - a 35mm-faithful film grain node for ComfyUI.
 
-This models the way real colour negative grain behaves, instead of laying a soft
+This models the way real color negative grain behaves, instead of laying a soft
 noise overlay on the frame:
 
-  1. Per-channel grain (three emulsion layers). Colour film has independent grain
+  1. Per-channel grain (three emulsion layers). Color film has independent grain
      in its red, green and blue records, and the blue layer is the grainiest. The
      grain here is generated per channel with that weighting, so it has the faint
-     chromatic shimmer of real stock rather than flat grey speckle.
+     chromatic shimmer of real stock rather than flat gray speckle.
   2. Crisp band-pass clumps. The noise is built at full resolution and shaped with
      a difference of Gaussians (a fine blur minus a broader one), which removes the
      large-scale blotch and leaves the even, sharp sparkle of a real film spectrum.
@@ -149,13 +149,13 @@ class ColoristFilmGrain:
 
         chanw = torch.tensor(_CHANNEL_GRAIN, device=ndev).view(1, 3, 1, 1)
         shared3 = shared.repeat(1, 3, 1, 1) * float(luma_amt)   # achromatic luminance grain
-        chroma3 = chanw * indep * float(chroma_amt)             # per-channel colour grain
+        chroma3 = chanw * indep * float(chroma_amt)             # per-channel color grain
 
         # Band-pass clumps (difference of Gaussians): blur to a sub-pixel clump size,
         # then subtract a broader blur so the low-frequency blotch is removed, leaving
         # the fine even sparkle of a real film grain spectrum. The luminance grain is
         # blurred at one uniform size so it stays achromatic (true B&W at chroma 0),
-        # while the colour grain gets the per-layer sizes (blue larger, red finer).
+        # while the color grain gets the per-layer sizes (blue larger, red finer).
         sigma_px = _SIGMA_BASE + _SIGMA_SLOPE * float(grain_size)
 
         def bandpass(x, sigmas):

@@ -10,9 +10,9 @@ Colorist film tools for ComfyUI. A 35mm-faithful film grain node for video, plus
 
 ## Why it is different
 
-Most grain tools lay one flat grey layer over the whole frame. Real 35mm grain does not work that way, and this node models what it actually does:
+Most grain tools lay one flat gray layer over the whole frame. Real 35mm grain does not work that way, and this node models what it actually does:
 
-- **Per channel, like three emulsion layers.** Independent grain in R, G and B with the blue layer grainiest and its clumps larger, so it carries the faint colour shimmer of real stock instead of flat grey speckle.
+- **Per channel, like three emulsion layers.** Independent grain in R, G and B with the blue layer grainiest and its clumps larger, so it carries the faint color shimmer of real stock instead of flat gray speckle.
 - **Crisp band-pass clumps.** Full resolution noise shaped with a difference of Gaussians, so the large-scale blotch is gone and only the fine even sparkle of a real film spectrum remains.
 - **Signal dependent amplitude.** Grain peaks in the midtones and is present everywhere, never fully clearing the shadows or highlights. The biggest reason it reads as film instead of added noise.
 - **Added, not overlaid.** Signed grain added to the image, the way film density actually fluctuates.

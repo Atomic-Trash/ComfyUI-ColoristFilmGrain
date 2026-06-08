@@ -9,7 +9,7 @@ This node does it correctly, not as a global bloom:
   1. Work in linear light, where scattered light actually adds.
   2. Isolate only the true highlights with a soft threshold.
   3. Spread them with a wide, soft blur (two radii for a natural falloff).
-  4. Tint that glow red-orange, the colour real halation takes.
+  4. Tint that glow red-orange, the color real halation takes.
   5. Screen it back over the image so it lifts the surround without clipping.
 
 Apply it BEFORE grain: halation is image formation, grain sits on top. Torch only,
