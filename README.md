@@ -1,6 +1,8 @@
 # ComfyUI-ColoristFilmGrain
 
-Colorist film tools for ComfyUI. A 35mm-faithful film grain node for video, plus a companion warm-highlight halation node. Built to make AI and digital footage read like film, not like noise.
+Colorist film tools for ComfyUI. A 35mm modeled film grain node for video, plus a companion warm-highlight halation node. Built to make AI and digital footage read like film, not like noise.
+
+**Companion pack:** [ComfyUI-DeliveryBay](https://github.com/Atomic-Trash/ComfyUI-DeliveryBay) uses both of these nodes as its optional conformed finish — one master in, a named platform set out, the same grain character at every size.
 
 ![Colorist Film Grain node](docs/node_grain.png)
 
